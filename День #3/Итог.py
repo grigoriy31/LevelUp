@@ -1,2 +1,2 @@
-from calc import verf_final
-print(verf_final())
+from data_print import prnt_data
+run(prnt_data())

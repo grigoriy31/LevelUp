@@ -1,7 +1,7 @@
 from data_enter import data_input
-from calc import calc_num2, calc_num1
+from data_enter import l
 def verf():
-    exm = data_input()
+    exm = l
     i = 0
     c = bool
     k = 0
@@ -21,23 +21,9 @@ def verf():
             c = False
 
     return exm, c
-print(verf())
-c = bool
-exm, c = verf(exm, c)
-print(exm, c)
+# print(verf())
 
-# def verf_final():
-#     c = bool
-#     exm = []
-#     exm, c = verf(exm, c)
-#     while c == True:
-#         # calc_num2()
-#         # break
-#     print(1)
-#     if c == False:
-#         # pass
-#         print(2)
-#
-#
-# print(verf_final())
+
+
+
 

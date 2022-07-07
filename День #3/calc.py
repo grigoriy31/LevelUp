@@ -1,36 +1,61 @@
-# from check_data import verf
-from data_enter import data_input
+from check_data import verf
 
-def calc_num1(data):
+# print(data_input())
+# print(verf())
+с = bool
+exm, c = verf()
+
+
+
+def calc_num1():
+    exn = exm
+    t = []
+    for i in range(len(exn)):
+        t.append(exn[i])
     i = -1
     a = 0
-    while i < len(data):
+    b = len(exm) - 2
+    while i < b:
         i += 2
-        if data[i].append(a.count('/')):
-            a = a + int(data[i-1]) / int(data[i+1])
-            a.append(data[i-1])
-        elif data[i].appened(a.count('*')):
-            a = a + int(data[i - 1]) * int(data[i + 1])
-            a.append(data[i - 1])
+        if str(t[i]) == "/":
+            a = int(t[i-1]) / int(t[i+1])
+            del t[i-1:i+2]
+            t.insert(i - 1, a)
+            i -= 2
+            b -= 2
+        elif str(t[i]) == "*":
+            a = int(t[i - 1]) * int(t[i + 1])
+            del t[i - 1:i + 2]
+            t.insert(i - 1, a)
+            i -= 2
+            b -= 2
         else:
             continue
-        a = data
+    return t
+
+def calc_num2():
+
+    t = calc_num1()
+    a = 0
+    i = -1
+    while i < len(t) - 2:
+        i += 2
+        if c == True:
+            while str(t[1]) == "+":
+                    a = int(t[0]) + int(t[2])
+                    del t[0:3]
+                    t.insert(0, a)
+            if str(t[1]) == "-":
+                    a = int(t[0]) - int(t[2])
+                    del t[0:3]
+                    t.insert(0, a)
+            elif str(t[1]) == "=":
+                    break
+            break
+        elif c == False:
+            print("Превышено число попыток. Попробуйте позже.")
+            pass
+
     return a
 
-def calc_num2(a):
-    c = bool
-    exm = []
-    a = []
-    exm, c = verf(exm, c)
-    a = calc_num1(a)
-    i = -1
-    while i < len(a):
-        i += 2
-        if a[i] == "+":
-            a = a + a[i-1] + a[i+1]
-        elif a[i] == '-':
-            a = a + a[i-1] - a[i+1]
-        elif a[i] == '=':
-            break
-    return a
 

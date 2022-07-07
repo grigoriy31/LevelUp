@@ -1,8 +1,10 @@
 def data_input():
-    a = []
     a = input('Введите пример: ').split()
     return a
-# print(data_input())
+a = data_input()
+l = []
+for i in range(len(a)):
+    l.append(a[i])
 
 
 
