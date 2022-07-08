@@ -1,9 +1,7 @@
 from check_data import verf
-
+from data_enter import data_input
 # print(data_input())
 # print(verf())
-с = bool
-exm, c = verf()
 
 
 
@@ -54,8 +52,10 @@ def calc_num2():
             break
         elif c == False:
             print("Превышено число попыток. Попробуйте позже.")
-            pass
+            break
 
     return a
+с = bool
+exm, c = verf()
 
 
