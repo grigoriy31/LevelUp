@@ -1,0 +1,1 @@
+from Day4.task_1.parameters import parameters_figure

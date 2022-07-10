@@ -1,0 +1,1 @@
+from Day4.task_1.data_chek import check_data

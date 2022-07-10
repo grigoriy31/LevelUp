@@ -1,0 +1,1 @@
+from Day4.task_1.triangle import sq_per_tri
