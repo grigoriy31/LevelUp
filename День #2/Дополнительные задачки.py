@@ -156,12 +156,11 @@ def calc_dep(a):
 def check_calc_data(a):
     c = bool
     a, c = check_data_entry(a, c)
-    attempt = 0
     while c == True:
         calc_dep(a)
         a = calc_dep(a)
         break
-    if c == True:
+    if c == False:
         pass
     return a
 

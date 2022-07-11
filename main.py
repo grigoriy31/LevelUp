@@ -1,1 +1,1 @@
-ssh-keygen -o -t rsa -C "breslaw.spb@gmail.com"
+ssh-keygen -o -trsa -C "breslaw.spb@gmail.com"

@@ -1,9 +1,9 @@
 # Часть 1
 #a = input("Введите числа ").split()
 #l = []
-#for i in range(len(a)):
+# for i in range(len(a)):
 #    l.append(a[i])
-#print("Введенные данные "), print(l)
+#print("Введенные данные " + print(l))
 #print("Максимальное число " + max(l))
 #print("Минимальное число " + min(l))
 #i = -1

@@ -1,6 +1,6 @@
 from Day4.task_1.сircle import sq_per_cir
-import math
-pi = math.pi
+from math import pi
+
 
 def test_sq_per_cir():
     assert sq_per_cir(5) == (70, 30)
