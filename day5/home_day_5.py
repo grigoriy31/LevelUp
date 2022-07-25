@@ -6,7 +6,7 @@ def diari_1():
     command = input("Введите желаемое действие: ")
     while command != 'exit':
         if command == 'add':
-            data = input("Введите данные ученика в формате Иванов_Иван ")
+            data = input("Введите данные ученика в формате Иванов Иван ")
             if data in diari:
                 print("Ученик уже есть в журнале!")
                 command = input("Введите желаемое действие: ")
@@ -19,7 +19,7 @@ def diari_1():
                 print(i)
             command = input("Введите желаемое действие: ")
         elif command == 'mark':
-            users = input("Введите данные ученика в формате Иванов_Иван: ")
+            users = input("Введите данные ученика в формате Иванов Иван: ")
             a = [int(x) for x in input("Введите оценки ученика: ").split()]
             if diari[users] == [None]:
                 diari[users] = []
@@ -32,8 +32,8 @@ def diari_1():
                 command = input("Введите желаемое действие: ")
 
         elif command == 'edit':
-            users_old = input('Введите ФМ необходимые для замены в формате Иванов_Иван: ')
-            users_new = input("Введите новые данные ученика в формате Иванов_Иван")
+            users_old = input('Введите ФМ необходимые для замены в формате Иванов Иван: ')
+            users_new = input("Введите новые данные ученика в формате Иванов Иван")
             diari[users_new] = diari.pop(users_old)
             command = input("Введите желаемое действие: ")
         elif command == 'delete':
