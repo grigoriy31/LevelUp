@@ -14,7 +14,7 @@ def spb_part_1():
     while True:
         name = sheet.cell(row=row, column = 1)
         if type(name) == str:
-            name_m[name] = ['']
+            name_m[name] = ['Qrow']
             row += 1
             return True
         elif name == '':
@@ -28,12 +28,11 @@ def spb_part_2():
     name_m = {}
     while True:
         name = sheet.cell(row=row, column=1)
-        if type(name) == str:
+        if name == '':
+            return False
+        else:
             name_m[name] = ['']
             row += 1
             return True
-        elif name == '':
-            return False
-
 
 def sim_card():
