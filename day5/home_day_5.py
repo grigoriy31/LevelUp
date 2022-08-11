@@ -33,7 +33,7 @@ def diari_1():
 
         elif command == 'edit':
             users_old = input('Введите ФМ необходимые для замены в формате Иванов Иван: ')
-            users_new = input("Введите новые данные ученика в формате Иванов Иван")
+            users_new = input("Введите новые данные ученика в формате ИвановИван")
             diari[users_new] = diari.pop(users_old)
             command = input("Введите желаемое действие: ")
         elif command == 'delete':

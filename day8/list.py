@@ -1,6 +1,6 @@
 # a = int(input('Введите число: '))
 
-def list():
+def num_list(a):
     b = []
     i = 2
     while i < a:
@@ -12,18 +12,19 @@ def list():
     return b
 # print(b)
 def summ():
+    t = bool
     i = 0
-    b = list()
+    b = num_list(a)
     summ = 0
     for i in b:
         summ += i
-    if summ == a:
-        out = True
-    else:
-        out = False
-    return out
-for a in range(10000):
-    if summ(a) == True:
+        if summ == a:
+            t = True
+        else:
+            t = False
+    return t
+for a in range(1, 10000):
+    if summ() == True:
         print(a)
 
 

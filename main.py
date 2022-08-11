@@ -1,1 +1,5 @@
-ssh-keygen -o -trsa -C "breslaw.spb@gmail.com"
+from translate import Translator
+translator = Translator(to_lang="ru")
+translation = translator.translate("Hello")
+
+print(translation)

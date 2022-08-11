@@ -15,13 +15,13 @@
 # a[a_max] = b
 #
 # print(a)
-larger = [1, 2, 3, 5, 6]
-smaller = [3, 7]
-
-def isSublist():
-   for i in range(0, len(larger)):
-       if larger[i:i + len(smaller)] == smaller:
-           return True
-   return False
-print(isSublist())
+# larger = [1, 2, 3, 5, 6]
+# smaller = [3, 7]
+#
+# def isSublist():
+#    for i in range(0, len(larger)):
+#        if larger[i:i + len(smaller)] == smaller:
+#            return True
+#    return False
+# print(isSublist())
 

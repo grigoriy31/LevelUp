@@ -25,6 +25,7 @@
 #             break
 #         elif a == 2007 - 12*i or a == 2007 + 12*i:
 #             print('Свинья')
+#             break
 #         elif a == 2008 - 12*i or a == 2008 + 12*i:
 #             print('Крыса')
 #             break
