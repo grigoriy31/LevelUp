@@ -3,6 +3,7 @@ from imp_statistic import sim_card
 resultat_sim = sim_card()
 
 def plans():
+    print('Выставления планов')
     stat = openpyxl.load_workbook('Statistic_Spb_2022.xlsx')
     for sim_name_n in resultat_sim.keys():
         sheet = stat[sim_name_n]
